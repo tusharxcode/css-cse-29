@@ -1,0 +1,12 @@
+body{
+    background-color: indianred;
+}
+img{
+    float: inline-start;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.clr{
+    clear:both ;
+    background-color:azure;
+}
