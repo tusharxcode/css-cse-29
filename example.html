@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopEase</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* Navbar */
+header {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Hamburger */
+.menu-btn {
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Right menu */
+.right-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/* Mobile menu dropdown */
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    padding: 25px 0;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+/* Show menu */
+.nav-menu.active {
+    display: flex;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <div class="right-menu">
+            <a href="#">Cart 🛒</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav-menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </div>
+</header>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
