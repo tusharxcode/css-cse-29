@@ -1,0 +1,18 @@
+.box{
+    display : inline-block;
+    height : 200px;
+    width : 100px;
+    text-align : center;
+    padding: 40px;
+    margin: 10px;
+    
+}
+.box1{
+    background-color: darkgoldenrod;
+}
+.box2{
+    background-color: brown;
+}
+.box3{
+    background-color:cadetblue;
+}
